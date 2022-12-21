@@ -27,10 +27,10 @@ def get_hcp_label(brain_fmri_dir):
     finallabel = []
     for i in range(len(subjects_path)):
         tempidx = subjects_path[i].index('.')
-        if subjects_path[i][1:tempidx] not in filename:
+        if subjects_path[i][11:tempidx] not in filename:
             wrong.append(i)
             continue
-        idx = filename.index(subjects_path[i][1:tempidx])
+        idx = filename.index(subjects_path[i][11:tempidx])
         if 'D' in qc[idx] or 'C' in qc[idx]:
             wrong.append(i)
             continue

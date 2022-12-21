@@ -1,0 +1,1300 @@
+nohup: ignoring input
+18:24:14   INFO args Namespace(dataset_name='abide', output='./model/exp1', resume_file='', num_classes=2, d_model=200, nhead=5, graph_layer=3, seq_layer=3, task='', seed=10, num_workers=4, pretrain_model='../BERT_model/chinese_roberta_wwm_ext', running_type=['train', 'dev', 'test'], finetune=True, exp_name='3-3unpass', vocab_size=1, special_tokens=['测试'], max_input_size=192, max_output_size=175, num_hidden_layers=4, lr=1, lr_scale=0.01, dropout_prob=0.1, weight_decay=0.0002, accum_iter=4, epochs=250, train_bs=4, dev_bs=8, copy_source='content', share_tokenizer=True, share_word_embedding=True, using_RL=False, hidden_size=768, num_attention_heads=12, num_beams=5, shuffle_terms=False, compute_matching=False, replace_ratio=0, using_lac=False, copy_wo_gen=0, title_reformat=False, title_shuffle=False, paragraph_shuffle_ratio=0)
+18:24:23   INFO hello classify.classify
+18:24:23   INFO Classification is processing
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050642_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050646_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050647_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050649_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050654_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050656_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050659_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050660_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050663_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050664_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050665_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050666_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_a_0050668_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_b_0050644_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_b_0050648_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCMU_b_0050669_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051461_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051463_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051464_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051465_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051473_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051477_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051479_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051480_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051481_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051482_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051484_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051487_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051488_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051491_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zCaltech_0051493_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050772_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050773_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050774_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050775_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050776_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050777_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050778_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050779_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050780_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050781_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050782_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050783_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050784_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050785_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050786_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050787_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050788_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050789_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050790_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050791_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050792_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050793_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050794_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050795_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050796_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050797_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050798_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050799_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050800_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050801_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050802_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050803_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050804_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050807_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050812_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050814_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050815_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050816_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050817_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050818_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050819_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050820_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050821_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050822_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050823_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050824_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050825_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zKKI_0050826_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050682_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050683_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050685_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050686_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050687_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050688_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050689_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050690_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050691_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050692_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050693_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050694_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050695_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050696_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050697_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050698_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050699_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050700_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050701_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050702_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050703_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050704_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050705_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050706_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050707_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050708_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050709_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_1_0050711_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050722_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050723_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050724_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050725_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050726_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050728_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050730_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050731_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050733_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050735_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050737_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050738_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050739_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050740_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050741_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050742_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050743_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050744_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050745_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050748_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050749_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050750_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050751_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050752_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050754_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050755_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050756_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zLeuven_2_0050757_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051318_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051319_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051320_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051321_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051362_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051363_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051364_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051365_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051369_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051370_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051373_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051606_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_a_0051607_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_b_0051322_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_b_0051323_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_b_0051324_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_b_0051325_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_b_0051326_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_b_0051327_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051328_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051332_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051333_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051334_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051335_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051336_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051338_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051339_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051340_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051341_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051342_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051343_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051344_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051345_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051346_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051347_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_c_0051348_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051329_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051330_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051331_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051349_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051350_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051351_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051352_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051353_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051354_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051355_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051356_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051357_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051358_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051359_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051360_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zMaxMun_d_0051361_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050952_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050954_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050955_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050956_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050957_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050958_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050959_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050960_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050961_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050962_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050964_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050965_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050966_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050967_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050968_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050969_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050970_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050972_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050973_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050974_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050976_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050977_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050978_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050979_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050981_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050982_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050983_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050984_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050985_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050986_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050987_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050988_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050989_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050990_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050991_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050992_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050993_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050994_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050995_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050996_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050997_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0050999_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051000_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051001_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051002_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051003_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051006_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051007_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051008_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051009_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051010_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051011_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051012_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051013_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051014_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051015_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051016_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051017_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051018_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051019_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051020_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051021_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051023_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051024_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051025_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051026_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051027_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051028_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051029_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051030_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051032_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051033_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051034_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051035_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051036_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051038_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051039_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051040_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051041_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051042_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051044_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051045_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051046_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051047_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051048_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051049_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051050_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051051_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051052_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051053_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051054_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051055_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051056_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051057_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051058_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051059_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051060_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051061_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051062_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051063_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051064_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051065_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051066_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051067_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051068_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051069_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051070_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051071_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051072_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051073_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051074_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051075_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051076_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051077_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051078_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051079_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051080_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051081_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051082_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051083_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051084_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051085_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051086_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051087_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051088_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051089_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051090_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051091_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051093_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051094_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051095_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051096_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051097_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051098_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051099_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051100_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051101_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051102_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051103_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051104_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051105_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051106_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051107_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051109_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051110_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051111_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051112_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051113_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051114_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051116_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051117_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051118_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051122_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051123_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051124_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051126_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051127_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051128_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051129_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051130_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051131_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051146_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051147_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051148_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051149_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051150_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051151_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051152_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051153_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051154_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051155_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051156_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zNYU_0051159_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050142_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050143_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050144_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050145_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050146_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050147_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050148_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050149_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050150_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050152_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050153_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050156_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050157_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050158_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050159_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050160_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050161_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050162_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050163_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050164_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050167_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050168_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050169_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050170_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOHSU_0050171_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050102_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050103_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050104_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050105_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050106_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050107_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050109_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050110_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050111_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050112_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050113_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050114_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050115_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050116_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050117_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050118_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050119_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050120_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050121_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050122_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050123_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050124_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050125_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050126_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050127_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050128_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050129_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050130_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050131_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050132_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050133_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050134_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050135_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zOlin_0050136_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050003_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050004_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050005_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050006_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050007_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050008_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050010_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050011_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050012_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050013_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050014_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050015_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050016_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050017_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050020_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050022_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050023_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050024_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050025_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050026_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050027_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050028_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050030_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050031_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050032_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050033_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050034_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050035_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050036_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050037_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050038_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050039_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050040_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050041_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050042_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050043_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050044_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050045_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050046_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050047_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050048_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050049_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050050_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050051_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050052_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050053_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050054_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050056_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050057_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050059_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zPitt_0050060_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051556_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051557_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051558_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051559_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051560_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051562_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051563_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051564_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051565_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051566_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051567_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051568_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051569_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051570_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051572_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051573_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051574_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051576_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051577_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051578_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051579_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051580_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051582_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051583_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051584_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSBL_0051585_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050182_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050183_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050184_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050185_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050186_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050187_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050188_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050189_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050190_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050191_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050193_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050194_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050195_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050196_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050197_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050198_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050199_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050200_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050201_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050202_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050203_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050204_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050205_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050206_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050207_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050208_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050210_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050211_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050212_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050213_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050214_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050215_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zSDSU_0050217_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051160_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051161_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051162_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051163_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051164_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051166_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051168_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051169_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051170_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051171_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051173_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051174_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051175_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051177_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051178_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051179_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051180_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051181_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051182_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051183_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051184_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051185_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051186_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051187_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051188_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051189_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051190_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051191_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051192_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051193_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051194_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051195_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051196_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051197_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051198_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zStanford_0051199_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050232_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050233_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050234_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050235_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050236_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050237_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050239_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050240_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050241_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050242_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050243_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050245_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050246_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050247_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050248_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050249_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050250_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050251_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050252_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050253_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050254_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050255_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050257_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050259_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050260_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050261_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050262_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050263_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050264_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050265_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050266_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050267_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050268_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050269_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050270_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0050271_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0051132_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0051133_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0051134_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0051135_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0051136_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0051137_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0051138_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0051139_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0051140_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0051141_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zTrinity_0051142_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051201_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051202_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051203_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051204_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051205_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051206_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051207_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051208_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051209_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051210_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051211_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051212_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051213_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051214_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051215_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051216_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051217_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051218_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051219_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051220_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051221_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051222_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051223_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051224_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051225_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051226_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051227_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051228_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051229_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051230_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051231_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051234_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051235_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051236_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051237_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051238_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051239_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051240_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051241_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051248_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051249_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051250_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051251_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051252_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051253_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051254_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051255_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051256_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051257_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051258_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051260_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051261_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051262_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051263_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051264_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051265_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051266_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051267_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051268_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051269_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051271_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051272_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051273_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051274_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051275_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051276_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051277_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051278_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051279_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051280_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051281_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_1_0051282_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051291_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051292_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051293_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051294_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051295_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051296_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051297_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051298_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051299_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051300_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051301_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051302_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051303_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051304_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051305_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051306_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051307_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051308_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051309_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051311_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051312_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051313_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051314_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051315_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051316_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUCLA_2_0051317_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050272_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050273_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050274_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050275_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050276_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050277_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050278_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050279_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050281_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050282_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050283_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050284_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050285_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050286_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050287_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050288_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050289_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050290_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050291_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050292_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050293_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050294_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050295_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050296_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050297_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050298_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050299_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050300_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050301_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050302_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050303_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050304_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050305_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050306_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050307_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050308_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050310_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050311_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050312_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050313_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050314_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050315_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050316_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050317_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050318_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050319_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050320_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050321_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050322_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050324_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050325_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050326_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050327_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050329_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050330_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050331_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050332_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050333_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050334_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050335_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050336_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050337_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050338_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050339_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050340_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050341_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050342_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050343_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050344_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050345_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050346_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050347_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050348_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050349_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050350_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050351_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050352_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050353_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050354_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050355_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050356_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050357_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050358_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050359_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050360_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050361_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050362_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050363_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050364_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050365_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050366_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050367_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050368_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050369_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050370_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050371_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050372_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050373_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050374_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050375_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050376_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050377_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050379_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050380_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_1_0050381_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050382_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050383_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050385_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050386_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050387_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050388_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050390_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050391_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050397_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050399_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050402_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050403_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050404_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050405_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050406_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050407_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050408_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050410_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050411_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050412_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050413_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050414_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050415_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050416_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050417_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050418_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050419_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050421_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050422_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050424_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050425_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050426_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050427_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUM_2_0050428_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050433_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050434_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050435_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050436_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050437_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050438_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050439_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050440_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050441_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050442_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050443_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050444_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050445_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050446_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050447_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050448_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050449_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050453_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050463_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050466_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050467_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050468_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050469_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050470_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050477_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050480_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050481_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050482_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050483_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050485_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050486_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050487_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050488_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050489_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050490_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050491_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050492_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050493_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050494_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050496_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050497_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050498_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050499_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050500_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050501_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050502_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050503_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050504_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050505_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050507_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050509_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050510_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050511_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050514_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050515_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050516_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050518_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050519_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050520_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050521_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050523_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050524_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050525_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050526_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050527_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050528_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050529_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050530_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050531_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zUSM_0050532_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050551_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050552_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050553_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050555_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050556_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050557_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050558_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050559_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050560_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050561_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050562_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050563_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050564_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050565_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050566_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050567_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050568_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050569_rois_cc200.mat
+/home/ly/hym_code/dynamic_code/classify/dataset.py:57: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  data_x = np.array(feature)
+18:40:36   INFO /home/ly/hym_code/dynamic_dataset/abide dataset length: 974
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050570_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050571_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050572_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050573_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050574_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050575_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050576_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050577_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050578_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050601_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050602_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050603_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050604_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050605_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050606_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050607_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050608_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050609_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050610_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050611_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050612_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050613_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050614_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050615_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050616_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050617_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050618_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050619_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050620_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050621_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050622_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050623_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050624_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050625_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050626_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050627_rois_cc200.mat
+/home/ly/hym_code/dynamic_dataset/abide/zYale_0050628_rois_cc200.mat
+18:41:31   INFO 0-0 | avg_loss: 0.6148681640625, cur_loss: 0.6148681640625
+/home/ly/miniconda3/envs/graphgps/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+18:41:57   INFO 0-40 | avg_loss: 0.781697343035442, cur_loss: 0.355255126953125
+18:42:23   INFO 0-80 | avg_loss: 0.7834173131872106, cur_loss: 0.4906768798828125
+18:42:49   INFO 0-120 | avg_loss: 0.7724474441906637, cur_loss: 0.62469482421875
+18:43:15   INFO 0-160 | avg_loss: 0.7727957778835889, cur_loss: 0.88262939453125
+18:43:46   INFO epoch: 0, dev_acc_score: 0.5282051282051282
+18:43:48   INFO 1-0 | avg_loss: 1.2353515625, cur_loss: 1.2353515625
+18:44:15   INFO 1-40 | avg_loss: 0.8365538062118902, cur_loss: 0.5545654296875
+18:44:41   INFO 1-80 | avg_loss: 0.809216911410108, cur_loss: 0.70050048828125
+18:45:07   INFO 1-120 | avg_loss: 0.7842028909478306, cur_loss: 0.821136474609375
+18:45:33   INFO 1-160 | avg_loss: 0.7822786887980396, cur_loss: 0.94927978515625
+18:46:04   INFO epoch: 1, dev_acc_score: 0.5282051282051282
+18:46:06   INFO 2-0 | avg_loss: 0.837890625, cur_loss: 0.837890625
+18:46:32   INFO 2-40 | avg_loss: 0.782738662347561, cur_loss: 1.15814208984375
+18:46:59   INFO 2-80 | avg_loss: 0.8073523250626929, cur_loss: 1.08514404296875
+18:47:24   INFO 2-120 | avg_loss: 0.7847925611763946, cur_loss: 0.78765869140625
+18:47:51   INFO 2-160 | avg_loss: 0.7910857585646351, cur_loss: 0.9534912109375
+18:48:21   INFO epoch: 2, dev_acc_score: 0.5282051282051282
+18:48:23   INFO 3-0 | avg_loss: 0.68731689453125, cur_loss: 0.68731689453125
+18:48:49   INFO 3-40 | avg_loss: 0.7515921243807164, cur_loss: 1.01959228515625
+18:49:16   INFO 3-80 | avg_loss: 0.7628678686824846, cur_loss: 0.93701171875
+18:49:42   INFO 3-120 | avg_loss: 0.7575380940082644, cur_loss: 0.684722900390625
+18:50:08   INFO 3-160 | avg_loss: 0.7655679453974185, cur_loss: 0.65997314453125
+18:50:40   INFO epoch: 3, dev_acc_score: 0.5282051282051282
+18:50:42   INFO 4-0 | avg_loss: 0.5911865234375, cur_loss: 0.5911865234375
+18:51:08   INFO 4-40 | avg_loss: 0.7661445431592988, cur_loss: 0.7882080078125
+18:51:34   INFO 4-80 | avg_loss: 0.7509856047453703, cur_loss: 0.8023681640625
+18:52:01   INFO 4-120 | avg_loss: 0.7534086369285898, cur_loss: 0.77630615234375
+18:52:27   INFO 4-160 | avg_loss: 0.7461714655716226, cur_loss: 0.64935302734375
+18:52:58   INFO epoch: 4, dev_acc_score: 0.5282051282051282
+18:53:00   INFO 5-0 | avg_loss: 0.8004150390625, cur_loss: 0.8004150390625
+18:53:26   INFO 5-40 | avg_loss: 0.7679450802686738, cur_loss: 0.569091796875
+18:53:53   INFO 5-80 | avg_loss: 0.7569945535542052, cur_loss: 1.0738525390625
+18:54:19   INFO 5-120 | avg_loss: 0.7424066716974432, cur_loss: 0.69989013671875
+18:54:45   INFO 5-160 | avg_loss: 0.7310635584481755, cur_loss: 0.61962890625
+18:55:16   INFO epoch: 5, dev_acc_score: 0.5282051282051282
+18:55:18   INFO 6-0 | avg_loss: 0.63818359375, cur_loss: 0.63818359375
+18:55:44   INFO 6-40 | avg_loss: 0.7536219154916158, cur_loss: 0.9462890625
+18:56:11   INFO 6-80 | avg_loss: 0.7247386037567516, cur_loss: 0.90869140625
+18:56:37   INFO 6-120 | avg_loss: 0.7278588665418388, cur_loss: 0.432098388671875
+18:57:03   INFO 6-160 | avg_loss: 0.7328549971491654, cur_loss: 0.5972900390625
+18:57:34   INFO epoch: 6, dev_acc_score: 0.5282051282051282
+18:57:36   INFO 7-0 | avg_loss: 0.71221923828125, cur_loss: 0.71221923828125
+18:58:02   INFO 7-40 | avg_loss: 0.6986337056974086, cur_loss: 0.706878662109375
+18:58:29   INFO 7-80 | avg_loss: 0.7136697651427469, cur_loss: 0.870849609375
+18:58:55   INFO 7-120 | avg_loss: 0.7183097650196927, cur_loss: 0.7069091796875
+18:59:21   INFO 7-160 | avg_loss: 0.7280534068990198, cur_loss: 0.87603759765625
+18:59:52   INFO epoch: 7, dev_acc_score: 0.5282051282051282
+18:59:54   INFO 8-0 | avg_loss: 0.456085205078125, cur_loss: 0.456085205078125
+19:00:20   INFO 8-40 | avg_loss: 0.6841795386337652, cur_loss: 0.595306396484375
+19:00:47   INFO 8-80 | avg_loss: 0.6955604082272376, cur_loss: 1.0408935546875
+19:01:13   INFO 8-120 | avg_loss: 0.7036676328044292, cur_loss: 0.573974609375
+19:01:39   INFO 8-160 | avg_loss: 0.6992969394470594, cur_loss: 0.4395751953125
+19:02:10   INFO epoch: 8, dev_acc_score: 0.5025641025641026
+19:02:12   INFO 9-0 | avg_loss: 0.533477783203125, cur_loss: 0.533477783203125
+19:02:38   INFO 9-40 | avg_loss: 0.7107484398818598, cur_loss: 0.497467041015625
+19:03:04   INFO 9-80 | avg_loss: 0.7134742265866126, cur_loss: 0.74993896484375
+19:03:30   INFO 9-120 | avg_loss: 0.713558732970687, cur_loss: 0.3846435546875
+19:03:56   INFO 9-160 | avg_loss: 0.7030110803450117, cur_loss: 0.76837158203125
+19:04:26   INFO epoch: 9, dev_acc_score: 0.49230769230769234
+19:04:29   INFO 10-0 | avg_loss: 0.51385498046875, cur_loss: 0.51385498046875
+19:04:55   INFO 10-40 | avg_loss: 0.7133055896293826, cur_loss: 0.8892822265625
+19:05:21   INFO 10-80 | avg_loss: 0.6977710488401814, cur_loss: 0.593170166015625
+19:05:48   INFO 10-120 | avg_loss: 0.701834812637203, cur_loss: 0.680694580078125
+19:06:14   INFO 10-160 | avg_loss: 0.699146436608356, cur_loss: 0.4609375
+19:06:45   INFO epoch: 10, dev_acc_score: 0.5230769230769231
+19:06:47   INFO 11-0 | avg_loss: 0.7657470703125, cur_loss: 0.7657470703125
+19:07:13   INFO 11-40 | avg_loss: 0.6760268792873476, cur_loss: 0.680419921875
+19:07:39   INFO 11-80 | avg_loss: 0.6816146285445602, cur_loss: 0.619049072265625
+19:08:05   INFO 11-120 | avg_loss: 0.6892417718556302, cur_loss: 0.724639892578125
+19:08:31   INFO 11-160 | avg_loss: 0.6784029184661297, cur_loss: 0.552276611328125
+19:09:02   INFO epoch: 11, dev_acc_score: 0.5076923076923077
+19:09:05   INFO 12-0 | avg_loss: 0.43035888671875, cur_loss: 0.43035888671875
+19:09:31   INFO 12-40 | avg_loss: 0.656131279177782, cur_loss: 0.60882568359375
+19:09:57   INFO 12-80 | avg_loss: 0.6551155749662423, cur_loss: 0.6370849609375
+19:10:24   INFO 12-120 | avg_loss: 0.6624219910172392, cur_loss: 0.698486328125
+19:10:49   INFO 12-160 | avg_loss: 0.6580833292895962, cur_loss: 0.460174560546875
+19:11:20   INFO epoch: 12, dev_acc_score: 0.517948717948718
+19:11:22   INFO 13-0 | avg_loss: 0.503448486328125, cur_loss: 0.503448486328125
+19:11:49   INFO 13-40 | avg_loss: 0.6242005883193598, cur_loss: 0.423370361328125
+19:12:15   INFO 13-80 | avg_loss: 0.6493194956838348, cur_loss: 0.5673828125
+19:12:42   INFO 13-120 | avg_loss: 0.6731047827350206, cur_loss: 0.65899658203125
+19:13:08   INFO 13-160 | avg_loss: 0.6765657033979523, cur_loss: 0.592193603515625
+19:13:39   INFO epoch: 13, dev_acc_score: 0.49743589743589745
+19:13:41   INFO 14-0 | avg_loss: 0.7015380859375, cur_loss: 0.7015380859375
+19:14:08   INFO 14-40 | avg_loss: 0.721645820431593, cur_loss: 0.491302490234375
+19:14:34   INFO 14-80 | avg_loss: 0.6896919909818673, cur_loss: 1.060302734375
+19:15:00   INFO 14-120 | avg_loss: 0.6750567727837681, cur_loss: 0.50567626953125
+19:15:27   INFO 14-160 | avg_loss: 0.6778614683921292, cur_loss: 0.792144775390625
+19:15:58   INFO epoch: 14, dev_acc_score: 0.5025641025641026
+19:16:00   INFO 15-0 | avg_loss: 0.4765625, cur_loss: 0.4765625
+19:16:27   INFO 15-40 | avg_loss: 0.6431192537633384, cur_loss: 0.500274658203125
+19:16:52   INFO 15-80 | avg_loss: 0.6801026897665895, cur_loss: 0.83892822265625
+19:17:19   INFO 15-120 | avg_loss: 0.6661264719056689, cur_loss: 0.8446044921875
+19:17:45   INFO 15-160 | avg_loss: 0.672280258273486, cur_loss: 0.51861572265625
+19:18:16   INFO epoch: 15, dev_acc_score: 0.5282051282051282
+19:18:18   INFO 16-0 | avg_loss: 0.51068115234375, cur_loss: 0.51068115234375
+19:18:44   INFO 16-40 | avg_loss: 0.6577662026009908, cur_loss: 0.55047607421875
+19:19:11   INFO 16-80 | avg_loss: 0.6636744369695216, cur_loss: 0.63494873046875
+19:19:36   INFO 16-120 | avg_loss: 0.6717495248337423, cur_loss: 0.773681640625
+19:20:03   INFO 16-160 | avg_loss: 0.6665342342779503, cur_loss: 0.64691162109375
+19:20:33   INFO epoch: 16, dev_acc_score: 0.517948717948718
+19:20:35   INFO 17-0 | avg_loss: 0.52117919921875, cur_loss: 0.52117919921875
+19:21:02   INFO 17-40 | avg_loss: 0.6247975419207317, cur_loss: 0.4490966796875
+19:21:28   INFO 17-80 | avg_loss: 0.6140276120032793, cur_loss: 1.0733642578125
+19:21:54   INFO 17-120 | avg_loss: 0.6198348368494964, cur_loss: 0.5920867919921875
+19:22:21   INFO 17-160 | avg_loss: 0.6378859052006502, cur_loss: 0.65411376953125
+19:22:51   INFO epoch: 17, dev_acc_score: 0.517948717948718
+19:22:53   INFO 18-0 | avg_loss: 1.01043701171875, cur_loss: 1.01043701171875
+19:23:20   INFO 18-40 | avg_loss: 0.6369320008812881, cur_loss: 0.80865478515625
+19:23:46   INFO 18-80 | avg_loss: 0.6085310570987654, cur_loss: 0.42230224609375
+19:24:13   INFO 18-120 | avg_loss: 0.6341483376242898, cur_loss: 0.5763092041015625
+19:24:39   INFO 18-160 | avg_loss: 0.6417702621554736, cur_loss: 0.412353515625
+19:25:09   INFO epoch: 18, dev_acc_score: 0.49230769230769234
+19:25:11   INFO 19-0 | avg_loss: 0.40203857421875, cur_loss: 0.40203857421875
+19:25:38   INFO 19-40 | avg_loss: 0.6065026260003811, cur_loss: 0.432403564453125
+19:26:04   INFO 19-80 | avg_loss: 0.6191605932918596, cur_loss: 1.0933837890625
+19:26:30   INFO 19-120 | avg_loss: 0.6116288870819344, cur_loss: 0.690887451171875
+19:26:56   INFO 19-160 | avg_loss: 0.6136572227714965, cur_loss: 0.40087890625
+19:27:27   INFO epoch: 19, dev_acc_score: 0.5128205128205128
+19:27:29   INFO 20-0 | avg_loss: 1.1185302734375, cur_loss: 1.1185302734375
+19:27:55   INFO 20-40 | avg_loss: 0.6624491621808308, cur_loss: 0.38385009765625
+19:28:22   INFO 20-80 | avg_loss: 0.6367294876663773, cur_loss: 0.6232452392578125
+19:28:48   INFO 20-120 | avg_loss: 0.620008736602531, cur_loss: 0.9969482421875
+19:29:14   INFO 20-160 | avg_loss: 0.6275322007836762, cur_loss: 0.60748291015625
+19:29:44   INFO epoch: 20, dev_acc_score: 0.5025641025641026
+19:29:46   INFO 21-0 | avg_loss: 0.53582763671875, cur_loss: 0.53582763671875
+19:30:13   INFO 21-40 | avg_loss: 0.5586104974514101, cur_loss: 0.57305908203125
+19:30:39   INFO 21-80 | avg_loss: 0.6045266610604746, cur_loss: 0.93505859375
+19:31:05   INFO 21-120 | avg_loss: 0.6177046594540935, cur_loss: 0.561614990234375
+19:31:32   INFO 21-160 | avg_loss: 0.610915474269701, cur_loss: 0.4503936767578125
+19:32:02   INFO epoch: 21, dev_acc_score: 0.5076923076923077
+19:32:04   INFO 22-0 | avg_loss: 0.8306884765625, cur_loss: 0.8306884765625
+19:32:31   INFO 22-40 | avg_loss: 0.6392602687928735, cur_loss: 0.542205810546875
+19:32:58   INFO 22-80 | avg_loss: 0.6214609028380594, cur_loss: 0.51904296875
+19:33:23   INFO 22-120 | avg_loss: 0.6144434400826446, cur_loss: 0.36090087890625
+19:33:50   INFO 22-160 | avg_loss: 0.6203861591978843, cur_loss: 0.54254150390625
+19:34:20   INFO epoch: 22, dev_acc_score: 0.48717948717948717
+19:34:22   INFO 23-0 | avg_loss: 0.6573486328125, cur_loss: 0.6573486328125
+19:34:49   INFO 23-40 | avg_loss: 0.6108309117759146, cur_loss: 0.509368896484375
+19:35:15   INFO 23-80 | avg_loss: 0.6205007294077932, cur_loss: 0.79437255859375
+19:35:41   INFO 23-120 | avg_loss: 0.6041023947975852, cur_loss: 0.475982666015625
+19:36:08   INFO 23-160 | avg_loss: 0.5920041481160229, cur_loss: 0.637176513671875
+19:36:38   INFO epoch: 23, dev_acc_score: 0.5487179487179488
+19:36:40   INFO 24-0 | avg_loss: 0.544921875, cur_loss: 0.544921875
+19:37:07   INFO 24-40 | avg_loss: 0.5939639952124619, cur_loss: 0.7418212890625
+19:37:33   INFO 24-80 | avg_loss: 0.5615076135706019, cur_loss: 0.3966064453125
+19:38:00   INFO 24-120 | avg_loss: 0.5799104044260073, cur_loss: 0.41510009765625
+19:38:26   INFO 24-160 | avg_loss: 0.5871239893184685, cur_loss: 0.75030517578125
+19:38:57   INFO epoch: 24, dev_acc_score: 0.5230769230769231
+19:38:59   INFO 25-0 | avg_loss: 0.512359619140625, cur_loss: 0.512359619140625
+19:39:26   INFO 25-40 | avg_loss: 0.6058457537395198, cur_loss: 0.364288330078125
+19:39:52   INFO 25-80 | avg_loss: 0.5975954032238618, cur_loss: 0.5555419921875
+19:40:18   INFO 25-120 | avg_loss: 0.5857429189130294, cur_loss: 0.595855712890625
+19:40:44   INFO 25-160 | avg_loss: 0.594296567928717, cur_loss: 0.53509521484375
+19:41:15   INFO epoch: 25, dev_acc_score: 0.49230769230769234
+19:41:17   INFO 26-0 | avg_loss: 0.6307830810546875, cur_loss: 0.6307830810546875
+19:41:44   INFO 26-40 | avg_loss: 0.5489029302829649, cur_loss: 0.566192626953125
+19:42:10   INFO 26-80 | avg_loss: 0.5529868043499229, cur_loss: 0.67987060546875
+19:42:36   INFO 26-120 | avg_loss: 0.5776613093604727, cur_loss: 0.5755615234375
+19:43:03   INFO 26-160 | avg_loss: 0.5847681649723409, cur_loss: 0.77325439453125
+19:43:34   INFO epoch: 26, dev_acc_score: 0.5282051282051282
+19:43:37   INFO 27-0 | avg_loss: 0.679901123046875, cur_loss: 0.679901123046875
+19:44:03   INFO 27-40 | avg_loss: 0.583553779415968, cur_loss: 0.57275390625
+19:44:29   INFO 27-80 | avg_loss: 0.5707175172405479, cur_loss: 0.618377685546875
+19:44:55   INFO 27-120 | avg_loss: 0.5622036516173812, cur_loss: 0.527801513671875
+19:45:22   INFO 27-160 | avg_loss: 0.5691436388477775, cur_loss: 0.5501708984375
+19:45:53   INFO epoch: 27, dev_acc_score: 0.49743589743589745
+19:45:55   INFO 28-0 | avg_loss: 0.69281005859375, cur_loss: 0.69281005859375
+19:46:21   INFO 28-40 | avg_loss: 0.5948981308355564, cur_loss: 1.0615234375
+19:46:48   INFO 28-80 | avg_loss: 0.579098360038098, cur_loss: 0.495086669921875
+19:47:14   INFO 28-120 | avg_loss: 0.5591698008135331, cur_loss: 0.4425048828125
+19:47:40   INFO 28-160 | avg_loss: 0.5710356339164402, cur_loss: 0.40594482421875
+19:48:12   INFO epoch: 28, dev_acc_score: 0.5333333333333333
+19:48:14   INFO 29-0 | avg_loss: 0.428680419921875, cur_loss: 0.428680419921875
+19:48:40   INFO 29-40 | avg_loss: 0.5568222418064024, cur_loss: 0.383514404296875
+19:49:06   INFO 29-80 | avg_loss: 0.5597720675998263, cur_loss: 0.37420654296875
+19:49:33   INFO 29-120 | avg_loss: 0.5460027269095429, cur_loss: 0.371185302734375
+19:49:59   INFO 29-160 | avg_loss: 0.5664046388235151, cur_loss: 0.53509521484375
+19:50:30   INFO epoch: 29, dev_acc_score: 0.5128205128205128
+19:50:32   INFO 30-0 | avg_loss: 0.369171142578125, cur_loss: 0.369171142578125
+19:50:59   INFO 30-40 | avg_loss: 0.5421778981278582, cur_loss: 0.68353271484375
+19:51:25   INFO 30-80 | avg_loss: 0.5506403416763117, cur_loss: 0.4618377685546875
+19:51:52   INFO 30-120 | avg_loss: 0.5518085069892821, cur_loss: 0.6007080078125
+19:52:18   INFO 30-160 | avg_loss: 0.5488237653459821, cur_loss: 0.377960205078125
+19:52:49   INFO epoch: 30, dev_acc_score: 0.5025641025641026
+19:52:51   INFO 31-0 | avg_loss: 0.44122314453125, cur_loss: 0.44122314453125
+19:53:18   INFO 31-40 | avg_loss: 0.510108017339939, cur_loss: 0.3881378173828125
+19:53:44   INFO 31-80 | avg_loss: 0.5120171440972222, cur_loss: 0.408966064453125
+19:54:11   INFO 31-120 | avg_loss: 0.5352749154587423, cur_loss: 1.05816650390625
+19:54:37   INFO 31-160 | avg_loss: 0.5354986723905765, cur_loss: 0.42852783203125
+19:55:08   INFO epoch: 31, dev_acc_score: 0.5230769230769231
+19:55:10   INFO 32-0 | avg_loss: 0.616455078125, cur_loss: 0.616455078125
+19:55:37   INFO 32-40 | avg_loss: 0.6003548226705412, cur_loss: 0.4742431640625
+19:56:04   INFO 32-80 | avg_loss: 0.5680434615523727, cur_loss: 0.53106689453125
+19:56:30   INFO 32-120 | avg_loss: 0.5767792000258265, cur_loss: 0.41717529296875
+19:56:57   INFO 32-160 | avg_loss: 0.5729324625145574, cur_loss: 0.432373046875
+19:57:27   INFO epoch: 32, dev_acc_score: 0.517948717948718
+19:57:30   INFO 33-0 | avg_loss: 0.465240478515625, cur_loss: 0.465240478515625
+19:57:56   INFO 33-40 | avg_loss: 0.5514470542349467, cur_loss: 1.084228515625
+19:58:22   INFO 33-80 | avg_loss: 0.5384186167775848, cur_loss: 0.42333984375
+19:58:49   INFO 33-120 | avg_loss: 0.5345772987554881, cur_loss: 0.4139862060546875
+19:59:15   INFO 33-160 | avg_loss: 0.5194525866775039, cur_loss: 0.351898193359375
+19:59:46   INFO epoch: 33, dev_acc_score: 0.5076923076923077
+19:59:48   INFO 34-0 | avg_loss: 0.63958740234375, cur_loss: 0.63958740234375
+20:00:15   INFO 34-40 | avg_loss: 0.5445083990329649, cur_loss: 0.316925048828125
+20:00:41   INFO 34-80 | avg_loss: 0.5696575023509838, cur_loss: 0.656707763671875
+20:01:07   INFO 34-120 | avg_loss: 0.5586931212874483, cur_loss: 1.07501220703125
+20:01:34   INFO 34-160 | avg_loss: 0.545568241095691, cur_loss: 0.44488525390625
+20:02:05   INFO epoch: 34, dev_acc_score: 0.5384615384615384
+20:02:07   INFO 35-0 | avg_loss: 0.404876708984375, cur_loss: 0.404876708984375
+20:02:33   INFO 35-40 | avg_loss: 0.5385548661394817, cur_loss: 0.32958984375
+20:03:00   INFO 35-80 | avg_loss: 0.549737059039834, cur_loss: 0.3277587890625
+20:03:26   INFO 35-120 | avg_loss: 0.5465140855016787, cur_loss: 0.358856201171875
+20:03:53   INFO 35-160 | avg_loss: 0.554312759304639, cur_loss: 0.403961181640625
+20:04:23   INFO epoch: 35, dev_acc_score: 0.49743589743589745
+20:04:25   INFO 36-0 | avg_loss: 0.522857666015625, cur_loss: 0.522857666015625
+20:04:52   INFO 36-40 | avg_loss: 0.4865469583650915, cur_loss: 0.54461669921875
+20:05:18   INFO 36-80 | avg_loss: 0.5338633972921489, cur_loss: 0.42376708984375
+20:05:45   INFO 36-120 | avg_loss: 0.541251316543453, cur_loss: 0.546966552734375
+20:06:11   INFO 36-160 | avg_loss: 0.5500475012737772, cur_loss: 0.938720703125
+20:06:43   INFO epoch: 36, dev_acc_score: 0.5384615384615384
+20:06:45   INFO 37-0 | avg_loss: 0.37237548828125, cur_loss: 0.37237548828125
+20:07:11   INFO 37-40 | avg_loss: 0.5227445276772104, cur_loss: 0.417205810546875
+20:07:37   INFO 37-80 | avg_loss: 0.4907770981023341, cur_loss: 0.404571533203125
+20:08:03   INFO 37-120 | avg_loss: 0.5086325653328383, cur_loss: 0.5555267333984375
+20:08:30   INFO 37-160 | avg_loss: 0.5144896892286976, cur_loss: 0.356475830078125
+20:09:01   INFO epoch: 37, dev_acc_score: 0.5282051282051282
+20:09:03   INFO 38-0 | avg_loss: 0.555267333984375, cur_loss: 0.555267333984375
+20:09:29   INFO 38-40 | avg_loss: 0.519192207150343, cur_loss: 0.53741455078125
+20:09:55   INFO 38-80 | avg_loss: 0.5273301866319444, cur_loss: 0.4693756103515625
+20:10:23   INFO 38-120 | avg_loss: 0.5209442643094654, cur_loss: 1.0472412109375
+20:10:49   INFO 38-160 | avg_loss: 0.5214821003979038, cur_loss: 0.671844482421875
+20:11:20   INFO epoch: 38, dev_acc_score: 0.5282051282051282
+20:11:23   INFO 39-0 | avg_loss: 0.79754638671875, cur_loss: 0.79754638671875
+20:11:49   INFO 39-40 | avg_loss: 0.5441265571408156, cur_loss: 0.5458984375
+20:12:15   INFO 39-80 | avg_loss: 0.5463032663604359, cur_loss: 0.35870361328125
+20:12:42   INFO 39-120 | avg_loss: 0.5233871838278021, cur_loss: 0.78741455078125
+20:13:08   INFO 39-160 | avg_loss: 0.5254149348099039, cur_loss: 0.690155029296875
+20:13:39   INFO epoch: 39, dev_acc_score: 0.517948717948718
+20:13:41   INFO 40-0 | avg_loss: 1.18841552734375, cur_loss: 1.18841552734375
+20:14:07   INFO 40-40 | avg_loss: 0.5678658834317836, cur_loss: 0.3543701171875
+20:14:34   INFO 40-80 | avg_loss: 0.5146942138671875, cur_loss: 0.4466094970703125
+20:15:00   INFO 40-120 | avg_loss: 0.5091884392352144, cur_loss: 0.412841796875
+20:15:26   INFO 40-160 | avg_loss: 0.506005897285035, cur_loss: 0.572723388671875
+20:15:57   INFO epoch: 40, dev_acc_score: 0.517948717948718
+20:15:59   INFO 41-0 | avg_loss: 0.6035308837890625, cur_loss: 0.6035308837890625
+20:16:26   INFO 41-40 | avg_loss: 0.5269168760718369, cur_loss: 0.6270751953125
+20:16:52   INFO 41-80 | avg_loss: 0.5109327339831694, cur_loss: 0.5005340576171875
+20:17:18   INFO 41-120 | avg_loss: 0.5255111189913159, cur_loss: 0.416839599609375
+20:17:44   INFO 41-160 | avg_loss: 0.5267179974858065, cur_loss: 0.572601318359375
+20:18:14   INFO epoch: 41, dev_acc_score: 0.5230769230769231
+20:18:16   INFO 42-0 | avg_loss: 0.6443328857421875, cur_loss: 0.6443328857421875
+20:18:43   INFO 42-40 | avg_loss: 0.5190284542921113, cur_loss: 0.320770263671875
+20:19:10   INFO 42-80 | avg_loss: 0.5470138361424576, cur_loss: 1.11785888671875
+20:19:36   INFO 42-120 | avg_loss: 0.5253992001872417, cur_loss: 0.41375732421875
+20:20:02   INFO 42-160 | avg_loss: 0.5256425371821623, cur_loss: 0.35540771484375
+20:20:32   INFO epoch: 42, dev_acc_score: 0.5435897435897435
+20:20:34   INFO 43-0 | avg_loss: 0.6044921875, cur_loss: 0.6044921875
+20:21:00   INFO 43-40 | avg_loss: 0.5352643641029916, cur_loss: 0.510833740234375
+20:21:27   INFO 43-80 | avg_loss: 0.5163733399944541, cur_loss: 0.59503173828125
+20:21:53   INFO 43-120 | avg_loss: 0.5144754835396759, cur_loss: 0.3028564453125
+20:22:19   INFO 43-160 | avg_loss: 0.49640086867054056, cur_loss: 0.3145751953125
+20:22:50   INFO epoch: 43, dev_acc_score: 0.5230769230769231
+20:22:52   INFO 44-0 | avg_loss: 0.47210693359375, cur_loss: 0.47210693359375
+20:23:19   INFO 44-40 | avg_loss: 0.5025874812428545, cur_loss: 0.3306884765625
+20:23:46   INFO 44-80 | avg_loss: 0.497320858048804, cur_loss: 0.33880615234375
+20:24:12   INFO 44-120 | avg_loss: 0.49482373954836, cur_loss: 0.417572021484375
+20:24:38   INFO 44-160 | avg_loss: 0.4958767150499806, cur_loss: 0.5173797607421875
+20:25:09   INFO epoch: 44, dev_acc_score: 0.5128205128205128
+20:25:11   INFO 45-0 | avg_loss: 0.326751708984375, cur_loss: 0.326751708984375
+20:25:37   INFO 45-40 | avg_loss: 0.505520332150343, cur_loss: 0.4569854736328125
+20:26:04   INFO 45-80 | avg_loss: 0.48261986249758876, cur_loss: 0.3240966796875
+20:26:30   INFO 45-120 | avg_loss: 0.4841343903344525, cur_loss: 0.4790802001953125
+20:26:56   INFO 45-160 | avg_loss: 0.4969212786751504, cur_loss: 0.4267578125
+20:27:28   INFO epoch: 45, dev_acc_score: 0.517948717948718
+20:27:30   INFO 46-0 | avg_loss: 0.316925048828125, cur_loss: 0.316925048828125
+20:27:56   INFO 46-40 | avg_loss: 0.5080145859136814, cur_loss: 0.520416259765625
+20:28:22   INFO 46-80 | avg_loss: 0.5069366266698013, cur_loss: 0.3978271484375
+20:28:49   INFO 46-120 | avg_loss: 0.5080191241808174, cur_loss: 0.363037109375
+20:29:16   INFO 46-160 | avg_loss: 0.5056492112438131, cur_loss: 0.8828125
+20:29:47   INFO epoch: 46, dev_acc_score: 0.5333333333333333
+20:29:49   INFO 47-0 | avg_loss: 0.32904052734375, cur_loss: 0.32904052734375
+20:30:16   INFO 47-40 | avg_loss: 0.49870858541349083, cur_loss: 0.532470703125
+20:30:42   INFO 47-80 | avg_loss: 0.4989407386308835, cur_loss: 0.535675048828125
+20:31:08   INFO 47-120 | avg_loss: 0.4926274827689179, cur_loss: 0.3951568603515625
+20:31:35   INFO 47-160 | avg_loss: 0.4961835493952591, cur_loss: 0.3316650390625
+20:32:05   INFO epoch: 47, dev_acc_score: 0.5282051282051282
+20:32:07   INFO 48-0 | avg_loss: 1.1409912109375, cur_loss: 1.1409912109375
+20:32:34   INFO 48-40 | avg_loss: 0.48183645853182167, cur_loss: 0.55877685546875
+20:33:00   INFO 48-80 | avg_loss: 0.47508522316261576, cur_loss: 0.98974609375
+20:33:26   INFO 48-120 | avg_loss: 0.4925879486336196, cur_loss: 0.424468994140625
+20:33:53   INFO 48-160 | avg_loss: 0.4851196478612675, cur_loss: 0.40924072265625
+20:34:23   INFO epoch: 48, dev_acc_score: 0.5487179487179488
+20:34:25   INFO 49-0 | avg_loss: 1.320556640625, cur_loss: 1.320556640625
+20:34:51   INFO 49-40 | avg_loss: 0.4830532539181593, cur_loss: 0.6224517822265625
+20:35:17   INFO 49-80 | avg_loss: 0.49046240912543404, cur_loss: 0.6947021484375
+20:35:44   INFO 49-120 | avg_loss: 0.4881471996465005, cur_loss: 0.681304931640625
+20:36:10   INFO 49-160 | avg_loss: 0.49015523780206716, cur_loss: 0.51080322265625
+20:36:41   INFO epoch: 49, dev_acc_score: 0.5487179487179488
+20:36:43   INFO 50-0 | avg_loss: 0.580596923828125, cur_loss: 0.580596923828125
+20:37:10   INFO 50-40 | avg_loss: 0.48798537835842226, cur_loss: 0.591552734375
+20:37:36   INFO 50-80 | avg_loss: 0.5214405766239872, cur_loss: 0.65087890625
+20:38:03   INFO 50-120 | avg_loss: 0.5139554236546036, cur_loss: 0.52081298828125
+20:38:29   INFO 50-160 | avg_loss: 0.5065686717536879, cur_loss: 0.357696533203125
+20:39:00   INFO epoch: 50, dev_acc_score: 0.517948717948718
+20:39:03   INFO 51-0 | avg_loss: 0.389007568359375, cur_loss: 0.389007568359375
+20:39:29   INFO 51-40 | avg_loss: 0.4904991708150724, cur_loss: 0.30523681640625
+20:39:55   INFO 51-80 | avg_loss: 0.4734092053071952, cur_loss: 0.306121826171875
+20:40:21   INFO 51-120 | avg_loss: 0.48499480948960483, cur_loss: 0.359100341796875
+20:40:48   INFO 51-160 | avg_loss: 0.4704301253609035, cur_loss: 0.44150543212890625
+20:41:20   INFO epoch: 51, dev_acc_score: 0.5076923076923077
+20:41:22   INFO 52-0 | avg_loss: 0.40399169921875, cur_loss: 0.40399169921875
+20:41:48   INFO 52-40 | avg_loss: 0.4860901251071837, cur_loss: 0.31646728515625
+20:42:15   INFO 52-80 | avg_loss: 0.49736974268783757, cur_loss: 0.432952880859375
+20:42:41   INFO 52-120 | avg_loss: 0.48825451559271693, cur_loss: 0.43597412109375
+20:43:08   INFO 52-160 | avg_loss: 0.4780756790445458, cur_loss: 0.29522705078125
