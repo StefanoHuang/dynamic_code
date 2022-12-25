@@ -1,6 +1,6 @@
 from sklearn.model_selection import StratifiedKFold
 import torch
-from pretrain.pretrain_model import MaskedBrainNetwork,ClassifiedBrainNetwork
+from pretrain.pretrain_model import *
 from utils.logger import Log
 from torch.cuda.amp import autocast, GradScaler
 from pretrain.optimizer import Optimizer
@@ -53,7 +53,7 @@ class Pretrain():
         #dec_lossfn = nn.BCELoss(reduction='mean')
         dec_lossfn = nn.CrossEntropyLoss(reduction='mean')
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        model = MaskedBrainNetwork(args)
+        model = PerlBrainNetwork(args)
         # 加载模型
         if args.resume_file:
             ori_model_state_dict = torch.load(args.resume_file)
@@ -66,7 +66,7 @@ class Pretrain():
         steps_per_epoch = len(train_loader)
         optimizer_class = Optimizer(args, [model], all_model=model,steps_per_epoch=steps_per_epoch)
         optimizer, scheduler = optimizer_class.get_optimizer()
-        min_loss = min_devloss = 1e6
+        min_loss = 1e6
         max_dev_acc = 0
         best_dev_epoch = 0
         # 创建输出目录

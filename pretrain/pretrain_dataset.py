@@ -83,33 +83,48 @@ class GraphDataset(Dataset):
 class SequenceDataset(Dataset):
     def __init__(self, args, filepath):
         self.args = args
-        self.all_feat = self.get_conn(filepath)
+        self.all_feat,self.Y = self.get_conn(filepath)
 
+    def generate_sop(self,inputs):
+        mask = np.random.random((1,inputs.shape[0]))
+        length = inputs.shape[1]
+        prob = self.args.mlm_probability
+        inputs = [np.concatenate((inputs[i,length//2:,:],inputs[i,:length//2,:]),axis=0) if mask[0,i] < prob else inputs[i,:,:] for i in range(mask.shape[1]) ]
+        labels = [1  if mask[0,i]<prob else 0 for i in range(mask.shape[1])]
+        return inputs,labels
+    
+    def generate_nsp(self,inputs):
+        mask = np.random.random((1,inputs.shape[0]))
+        length = inputs.shape[1]
+        prob = self.args.mlm_probability
+        shuffle_list = np.arange(inputs.shape[0])
+        np.random.shuffle(shuffle_list)
+        inputs = [np.concatenate((inputs[i,:length//2,:],inputs[shuffle_list[i],length//2:,:]),axis=0) if mask[0,i] < prob else inputs[i,:,:] for i in range(mask.shape[1]) ]
+        labels = [1  if mask[0,i]<prob else 0 for i in range(mask.shape[1])]
+        return inputs,labels
     def get_conn(self,datapath):
         feature = []
+        labels_list = []
+        maxlen = 128
         for i in range(len(datapath)):
             subject = datapath[i]
             #print(subject)
             mat = sio.loadmat(subject)['DZStruct']
-            #print(mat.shape)
-            #mat = self.gretna_tranmat(mat)
-            #idx = np.triu_indices_from(mat[0], 1)
-            #vec_networks = [m[idx] for m in mat]
-            #vec_networks = np.array(vec_networks)
-            feature += list(mat[0][0].transpose(1,0,2))
-            '''
-            if len(feature) == 10:
-                break
-            '''
+            temp = np.stack(list(mat[0][0])[:maxlen]).transpose(1,0,2)
+            #temp,labels = self.generate_sop(temp)
+            temp,labels = self.generate_nsp(temp)
+            feature += temp
+            labels_list += labels
+        feature = [np.pad(feature[i],((0,maxlen-feature[i].shape[0]),(0,0)),'constant',constant_values=(-1e9,-1e9)) if feature[i].shape[0]< maxlen else feature[i] for i in range(len(feature))]
         data_x = np.stack(feature)
-        return data_x
+        data_y = np.array(labels_list)
+        return data_x, data_y
 
     def __len__(self):
         return self.all_feat.shape[0]
 
     def __getitem__(self, idx):
-        anno = self.all_feat[idx]
-        return anno
+        return self.all_feat[idx],self.Y[idx]
 
 
 def BuildDataloader(dataset, batch_size, shuffle, num_workers):

@@ -28,6 +28,6 @@ class SeqEncoder(torch.nn.Module):
                     args.d_model, args.nhead, args.d_model*4,dropout=0.1,activation='gelu',
                     norm_first=True)
         self.encoder = TransformerEncoder(encoder_layer,args.seq_layer)
-    def forward(self,x, padding_mask):
-        x = self.encoder(src=x,src_key_padding_mask=padding_mask)
+    def forward(self,src, src_key_padding_mask):
+        x = self.encoder(src=src,src_key_padding_mask=src_key_padding_mask)
         return x
