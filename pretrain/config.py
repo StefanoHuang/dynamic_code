@@ -13,7 +13,7 @@ class Flags:
     def use_data_args(self):
         self.parser.add_argument("--dataset_name", type=str, default="all", help="the name of dataset")
         self.parser.add_argument("--output", type=str, default="./model/pretrain", help="save the checkpoints and logs")
-        self.parser.add_argument("--resume_file", type=str, default="", help="resume the checkpoint")
+        self.parser.add_argument("--resume_file", type=str, default="/home/scut/hym_code/dynamic_code/model/pretrain/pretrain/20221225114018-min_loss.pth", help="resume the checkpoint")
         self.parser.add_argument("--num_classes", type=int, default=2, help="Number for classification")
         self.parser.add_argument("--d_model", type=int, default=200, help="Dimension of node feature")
         self.parser.add_argument("--nhead", type=int, default=5, help="Number for self-attention heads")
@@ -49,7 +49,7 @@ class Flags:
         self.parser.add_argument("--share_tokenizer", type=bool, default=True)
         self.parser.add_argument("--share_word_embedding", type=bool, default=True)
         self.parser.add_argument("--using_RL", type=bool, default=False)    
-        self.parser.add_argument("--mlm_probability", type=float, default=0.2)    
+        self.parser.add_argument("--mlm_probability", type=float, default=0.8)    
 
 flags = Flags()
 args_pretrain = flags.get_parser()

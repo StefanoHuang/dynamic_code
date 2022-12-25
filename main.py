@@ -20,14 +20,14 @@ logger = Log(__name__).getlog()
 
 
 def main():
-    args = args_cls
-    #args = args_pretrain
+    #args = args_cls
+    args = args_pretrain
     logger.info(f"args {args}")
     seed_everything(args.seed)
     from classify.classify import Classification
-    from pretrain.pretrain import Pretrain
-    task = Classification()
-    #task = Pretrain()
+    from pretrain.pretrain_classify import Pretrain
+    #task = Classification()
+    task = Pretrain()
     task.run(args)
 
 if __name__ == "__main__":

@@ -11,9 +11,9 @@ def get_abide_label():
     filename = []
     label = []
     wrong = []
-    files = os.listdir('/home/ly/hym_code/ABIDE_ts')
+    files = os.listdir('/home/scut/hym_code/ABIDE_ts')
     files.sort()
-    with open("/home/ly/hym_code/dynamic_code/dataset_info/Phenotypic_V1_0b_preprocessed1.csv", mode="r") as f:
+    with open("dataset_info/Phenotypic_V1_0b_preprocessed1.csv", mode="r") as f:
         reader = csv.reader(f)
         header = next(reader)
 

@@ -9,7 +9,7 @@ from dataset_info.abide_label import get_abide_label
 from dataset_info.get_hcp_label import get_hcp_label
 from dataset_info.get_mdd_label import get_mdd_label
 from torch.nn.utils.rnn import pad_sequence
-from classify.dataset_path import dataset_path
+from pretrain.dataset_path import dataset_path
 logger = Log(__name__).getlog()
 import scipy.io as sio
 import pickle
@@ -80,17 +80,37 @@ class GraphDataset(Dataset):
         anno = self.all_feat[idx]
         return anno
 
-class collater():
-    def __init__(self, *params):
-        self. params = params
+class SequenceDataset(Dataset):
+    def __init__(self, args, filepath):
+        self.args = args
+        self.all_feat = self.get_conn(filepath)
 
-    def __call__(self, data):
-        data = list(zip(*data))
-        data[1] = np.array(data[1])
-        data[0] = [torch.tensor(d).float() for d in data[0]]
-        data[0] = pad_sequence(data[0], padding_value=-1e9)
-        data[1] = torch.from_numpy(data[1])
-        return data    
+    def get_conn(self,datapath):
+        feature = []
+        for i in range(len(datapath)):
+            subject = datapath[i]
+            #print(subject)
+            mat = sio.loadmat(subject)['DZStruct']
+            #print(mat.shape)
+            #mat = self.gretna_tranmat(mat)
+            #idx = np.triu_indices_from(mat[0], 1)
+            #vec_networks = [m[idx] for m in mat]
+            #vec_networks = np.array(vec_networks)
+            feature += list(mat[0][0].transpose(1,0,2))
+            '''
+            if len(feature) == 10:
+                break
+            '''
+        data_x = np.stack(feature)
+        return data_x
+
+    def __len__(self):
+        return self.all_feat.shape[0]
+
+    def __getitem__(self, idx):
+        anno = self.all_feat[idx]
+        return anno
+
 
 def BuildDataloader(dataset, batch_size, shuffle, num_workers):
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, num_workers=num_workers, pin_memory=True, prefetch_factor=10)

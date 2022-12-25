@@ -69,6 +69,12 @@ class DecodingBCEWithMaskLoss(nn.Module):
         loss = torch.sum(losses) / count
         return loss
 
+def sequence_accuracy(logits, targets):
+    assert logits.dim() == 2
+    assert targets.dim() == 1
+    pred = logits.argmax(dim=1)
+    return (pred == targets).sum().item() / targets.shape[0]
+
 class GenerateOOV:
     def __init__(self, tokenizer):
         self.tokenizer = tokenizer

@@ -33,6 +33,7 @@ class Pretrain():
         random_words = random_words.to(inputs.device)
         inputs[indices_random] = random_words[indices_random]
         return inputs, masked_indices
+
     def run(self, args):
         scaler = GradScaler()
         # 数据加载
@@ -47,7 +48,7 @@ class Pretrain():
         if args.resume_file:
             ori_model_state_dict = torch.load(args.resume_file)
             model.load_state_dict(ori_model_state_dict, strict=True)
-            logger.info("successfully load the previous checkpoint from {args.resume_file}")
+            logger.info(f"successfully load the previous checkpoint from {args.resume_file}")
         model = model.to(device)  # model中的tensor不会转到devcie，只有变量才会转到devcie
         train_loader = BuildDataloader(dataset=train_set, batch_size=args.train_bs, shuffle=True, num_workers=args.num_workers)
         dev_loader = BuildDataloader(dataset=dev_set, batch_size=args.train_bs, shuffle=True, num_workers=args.num_workers)
@@ -86,7 +87,7 @@ class Pretrain():
                         with autocast():
                             graph_pred = model(graph.transpose(0,1))
                             graph_pred = graph_pred.transpose(0,1)
-                            graph_pred[~masked_indices] = origin_graph[~masked_indices]
+                            #graph_pred[~masked_indices] = origin_graph[~masked_indices]
                             #origin_graph = origin_graph * label
                             generate_loss = dec_lossfn(graph_pred, origin_graph)
                             total_loss = generate_loss
