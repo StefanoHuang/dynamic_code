@@ -36,5 +36,5 @@ def get_hcp_label(brain_fmri_dir):
             continue
         else:
             finallabel.append(label[idx])
-    return finallabel,wrong
+    return np.array(finallabel),wrong
 

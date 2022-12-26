@@ -93,5 +93,5 @@ class collater():
         return data    
 
 def BuildDataloader(dataset, batch_size, shuffle, num_workers):
-    dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, num_workers=num_workers, pin_memory=True, prefetch_factor=10)
+    dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, num_workers=num_workers, pin_memory=True, prefetch_factor=16)
     return dataloader

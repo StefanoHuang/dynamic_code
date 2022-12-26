@@ -4,11 +4,11 @@ logger = Log(__name__).getlog()
 
 def dataset_path(dataset_name):
     if dataset_name == "abide":
-        d_path = "/home/ly/hym_code/dynamic_dataset/abide"
+        d_path = "/home/ly/hym_code/dynamic_dataset/preprocessed/abide"
     elif dataset_name == "hcp":
-        d_path = "/home/ly/hym_code/dynamic_dataset/hcp"
+        d_path = "/home/ly/hym_code/dynamic_dataset/preprocessed/hcp"
     elif dataset_name == "mdd":
-        d_path = "/home/ly/hym_code/dynamic_dataset/mdd"
+        d_path = "/home/ly/hym_code/dynamic_dataset/preprocessed/mdd"
     elif dataset_name == "other":
         pass
     else:

@@ -4,7 +4,7 @@ from classify.model import NestedTransformer
 from utils.logger import Log
 from torch.cuda.amp import autocast, GradScaler
 from classify.optimizer import Optimizer
-from classify.dataset import MyDataset, BuildDataloader, collater
+from classify.dataset_slowread import MyDataset, BuildDataloader, collater
 from classify.dataset_path import dataset_path
 from utils.utils import DecodingBCEWithMaskLoss, GenerateOOV, AverageMeter
 import os
@@ -46,9 +46,9 @@ class Classification():
             model = model.to(device)  # model中的tensor不会转到devcie，只有变量才会转到devcie
             train_set = dataset[train_index]
             dev_set = dataset[test_index]
-            collate_fn = collater()
+            collate_fn = collater(path)
             train_loader = BuildDataloader(train_set, batch_size=args.train_bs, shuffle=True, num_workers=args.num_workers,collate_fn=collate_fn)
-            collate_fn = collater()
+            collate_fn = collater(path)
             dev_loader = BuildDataloader(dev_set, batch_size=args.dev_bs, shuffle=False, num_workers=args.num_workers,collate_fn=collate_fn)
             # 优化器加载
             steps_per_epoch = len(train_loader)
@@ -63,7 +63,7 @@ class Classification():
             best_auc = 0
             best_f1 = 0
             # 创建输出目录
-            output_path = f"{args.output}/{args.exp_name}+'fold{k}"
+            output_path = f"{args.output}/{args.exp_name}"
             if not os.path.exists(output_path):
                 os.makedirs(output_path)
             if args.exp_name == "debug":

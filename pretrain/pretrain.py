@@ -86,7 +86,7 @@ class Pretrain():
                         with autocast():
                             graph_pred = model(graph.transpose(0,1))
                             graph_pred = graph_pred.transpose(0,1)
-                            graph_pred[~masked_indices] = origin_graph[~masked_indices]
+                            #graph_pred[~masked_indices] = origin_graph[~masked_indices]
                             #origin_graph = origin_graph * label
                             generate_loss = dec_lossfn(graph_pred, origin_graph)
                             total_loss = generate_loss

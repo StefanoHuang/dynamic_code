@@ -38,11 +38,11 @@ class NestedTransformer(nn.Module):
             sequence.append(single_out)
             graph_cls = single_out.unsqueeze(0)
         sequence = torch.stack(sequence,dim=0)
-        seq_mask = generate_square_subsequent_mask(sequence.size(0)+1,sequence.device)
-        seq_mask[0,:] = 0.0
+        #seq_mask = generate_square_subsequent_mask(sequence.size(0)+1,sequence.device)
+        #seq_mask[0,:] = 0.0
         seq_cls = self.seq_cls.expand(1,batchsize,-1)
         sequence = torch.cat([seq_cls,sequence], dim=0)
-        seq_embs = self.seq_encoder(src=sequence,mask=seq_mask,src_key_padding_mask=all_mask)
+        seq_embs = self.seq_encoder(src=sequence,src_key_padding_mask=all_mask)
         #以下为分类代码
         seq_embs = seq_embs[0]
         x = self.lin1(seq_embs)

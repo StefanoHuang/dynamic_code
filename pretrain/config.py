@@ -17,12 +17,12 @@ class Flags:
         self.parser.add_argument("--num_classes", type=int, default=2, help="Number for classification")
         self.parser.add_argument("--d_model", type=int, default=200, help="Dimension of node feature")
         self.parser.add_argument("--nhead", type=int, default=5, help="Number for self-attention heads")
-        self.parser.add_argument("--graph_layer", type=int, default=3, help="Number for graph transformer layers")
+        self.parser.add_argument("--graph_layer", type=int, default=6, help="Number for graph transformer layers")
         self.parser.add_argument("--seq_layer", type=int, default=3, help="Number for sequence transformer layers")
     def adjust_base_args(self):
         self.parser.add_argument("--task", type=str, default="") # gen、cls
         self.parser.add_argument("--seed", type=int, default=10)
-        self.parser.add_argument("--num_workers", type=int, default=4)
+        self.parser.add_argument("--num_workers", type=int, default=8)
         self.parser.add_argument("--pretrain_model", type=str, default=f"../BERT_model/chinese_roberta_wwm_ext", 
                                 help="the chinese pretrained model")
         self.parser.add_argument("--running_type", type=list, default=["train", "dev", "test"])
@@ -49,7 +49,7 @@ class Flags:
         self.parser.add_argument("--share_tokenizer", type=bool, default=True)
         self.parser.add_argument("--share_word_embedding", type=bool, default=True)
         self.parser.add_argument("--using_RL", type=bool, default=False)    
-        self.parser.add_argument("--mlm_probability", type=float, default=0.2)    
+        self.parser.add_argument("--mlm_probability", type=float, default=0.5)    
 
 flags = Flags()
 args_pretrain = flags.get_parser()

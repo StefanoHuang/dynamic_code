@@ -1,0 +1,59 @@
+nohup: ignoring input
+21:51:54   INFO args Namespace(dataset_name='hcp', output='./model/exp1', resume_file='', num_classes=2, d_model=200, nhead=5, graph_layer=3, seq_layer=3, task='', seed=10, num_workers=8, pretrain_model='../BERT_model/chinese_roberta_wwm_ext', running_type=['train', 'dev', 'test'], finetune=True, exp_name='3-3hcp', vocab_size=1, special_tokens=['测试'], max_input_size=192, max_output_size=175, num_hidden_layers=4, lr=1, lr_scale=0.01, dropout_prob=0.1, weight_decay=0.0002, accum_iter=4, epochs=200, train_bs=4, dev_bs=8, copy_source='content', share_tokenizer=True, share_word_embedding=True, using_RL=False)
+21:51:54   INFO hello classify.classify
+21:51:54   INFO Classification is processing
+21:51:55   INFO /home/ly/hym_code/dynamic_dataset/preprocessed/hcp dataset length: 995
+21:52:00   INFO 0-0 | avg_loss: 0.908203125, cur_loss: 0.908203125
+/home/ly/miniconda3/envs/graphgps/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+21:52:24   INFO 0-40 | avg_loss: 0.7541090802448552, cur_loss: 0.95892333984375
+21:52:48   INFO 0-80 | avg_loss: 0.7851865791980132, cur_loss: 1.1502685546875
+21:53:11   INFO 0-120 | avg_loss: 0.7890106705594654, cur_loss: 0.312652587890625
+21:53:35   INFO 0-160 | avg_loss: 0.7725630102690703, cur_loss: 0.84423828125
+21:54:05   INFO epoch: 0, dev_acc_score: 0.53125
+21:54:08   INFO 1-0 | avg_loss: 0.585968017578125, cur_loss: 0.585968017578125
+21:54:32   INFO 1-40 | avg_loss: 0.729180312738186, cur_loss: 0.8572998046875
+21:54:55   INFO 1-80 | avg_loss: 0.7333652826003086, cur_loss: 0.9305419921875
+21:55:19   INFO 1-120 | avg_loss: 0.7373497072330191, cur_loss: 0.8017578125
+21:55:42   INFO 1-160 | avg_loss: 0.7542368255046584, cur_loss: 0.90655517578125
+21:56:12   INFO epoch: 1, dev_acc_score: 0.53125
+21:56:15   INFO 2-0 | avg_loss: 0.8223876953125, cur_loss: 0.8223876953125
+21:56:38   INFO 2-40 | avg_loss: 0.7483375363233613, cur_loss: 0.4632568359375
+21:57:02   INFO 2-80 | avg_loss: 0.7503554732711227, cur_loss: 1.03387451171875
+21:57:25   INFO 2-120 | avg_loss: 0.7486336447975852, cur_loss: 0.77288818359375
+21:57:48   INFO 2-160 | avg_loss: 0.7499665443941673, cur_loss: 0.502716064453125
+21:58:18   INFO epoch: 2, dev_acc_score: 0.53125
+21:58:21   INFO 3-0 | avg_loss: 0.4151611328125, cur_loss: 0.4151611328125
+21:58:44   INFO 3-40 | avg_loss: 0.6855881853801448, cur_loss: 0.37164306640625
+21:59:08   INFO 3-80 | avg_loss: 0.6765146137755594, cur_loss: 0.50482177734375
+21:59:32   INFO 3-120 | avg_loss: 0.6941661992348915, cur_loss: 1.123779296875
+21:59:55   INFO 3-160 | avg_loss: 0.7143192646666343, cur_loss: 0.75299072265625
+22:00:26   INFO epoch: 3, dev_acc_score: 0.53125
+22:00:29   INFO 4-0 | avg_loss: 0.95367431640625, cur_loss: 0.95367431640625
+22:00:53   INFO 4-40 | avg_loss: 0.7458719393102134, cur_loss: 0.48291015625
+22:01:16   INFO 4-80 | avg_loss: 0.744598388671875, cur_loss: 0.624298095703125
+22:01:39   INFO 4-120 | avg_loss: 0.7304069582095816, cur_loss: 0.424560546875
+22:02:02   INFO 4-160 | avg_loss: 0.7210181573903338, cur_loss: 1.0316162109375
+22:02:32   INFO epoch: 4, dev_acc_score: 0.53125
+22:02:35   INFO 5-0 | avg_loss: 0.8199462890625, cur_loss: 0.8199462890625
+22:02:59   INFO 5-40 | avg_loss: 0.6677603372713414, cur_loss: 0.5572509765625
+22:03:22   INFO 5-80 | avg_loss: 0.6838484399112654, cur_loss: 0.615234375
+22:03:46   INFO 5-120 | avg_loss: 0.7055752336486312, cur_loss: 0.5523681640625
+22:04:09   INFO 5-160 | avg_loss: 0.7198751698369565, cur_loss: 0.6939697265625
+22:04:39   INFO epoch: 5, dev_acc_score: 0.53125
+22:04:42   INFO 6-0 | avg_loss: 0.82525634765625, cur_loss: 0.82525634765625
+22:05:06   INFO 6-40 | avg_loss: 0.6606110363471799, cur_loss: 0.512969970703125
+22:05:29   INFO 6-80 | avg_loss: 0.6682294680748457, cur_loss: 0.96234130859375
+22:05:52   INFO 6-120 | avg_loss: 0.6820000262299845, cur_loss: 0.488433837890625
+22:06:16   INFO 6-160 | avg_loss: 0.6995769998301631, cur_loss: 0.90191650390625
+22:06:46   INFO epoch: 6, dev_acc_score: 0.53125
+22:06:49   INFO 7-0 | avg_loss: 0.978515625, cur_loss: 0.978515625
+22:07:12   INFO 7-40 | avg_loss: 0.7051227848704268, cur_loss: 0.723907470703125
+22:07:35   INFO 7-80 | avg_loss: 0.6800766933111497, cur_loss: 0.535552978515625
+22:07:58   INFO 7-120 | avg_loss: 0.6921530479241994, cur_loss: 0.714630126953125
+22:08:22   INFO 7-160 | avg_loss: 0.68057554256842, cur_loss: 0.79803466796875
+22:08:52   INFO epoch: 7, dev_acc_score: 0.5364583333333334
+22:08:55   INFO 8-0 | avg_loss: 0.8575439453125, cur_loss: 0.8575439453125
+22:09:18   INFO 8-40 | avg_loss: 0.6628269102515244, cur_loss: 0.376251220703125
+22:09:42   INFO 8-80 | avg_loss: 0.6741630648389275, cur_loss: 0.44085693359375
+22:10:05   INFO 8-120 | avg_loss: 0.6634362591199638, cur_loss: 0.458892822265625

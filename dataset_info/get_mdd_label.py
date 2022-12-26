@@ -19,7 +19,7 @@ def get_mdd_label(brain_fmri_dir):
     index = select_sub(subjects_path)
     label = np.array(label)
     label = np.delete(label,index)
-    return list(label),index
+    return label,index
 
 
 def select_sub(subjects_path):

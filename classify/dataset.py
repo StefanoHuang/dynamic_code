@@ -21,12 +21,7 @@ class MyDataset(Dataset):
             self.Y,wrong_index = get_mdd_label(dataset_path)
         if self.args.dataset_name == 'hcp':
             self.Y,wrong_index = get_hcp_label(dataset_path)
-        preprocessed_path = "/home/ly/hym_code/dynamic_dataset/preprocessed/"+self.args.dataset_name+'.pkl'
-        if os.path.exists(preprocessed_path):
-            self.all_anno = pickle.load(open(preprocessed_path,'rb'))
-        else:
-            self.all_anno = self.get_conn(dataset_path,wrong_index)
-            #pickle.dump(self.all_anno,open(preprocessed_path,mode='wb'))
+        self.all_anno = self.get_conn(dataset_path,wrong_index)
         logger.info(f"{dataset_path} dataset length: {(len(self.all_anno))}")
 
     def get_conn(self,datadir,wrong):
@@ -40,15 +35,8 @@ class MyDataset(Dataset):
             subject = datapath[i]
             if i in wrong:
                 continue
-            #print(sio.loadmat(subject))
-            #mat = sio.loadmat(subject)['dynamic_corr']
             print(subject)
             mat = sio.loadmat(subject)['DZStruct']
-            #print(mat.shape)
-            #mat = self.gretna_tranmat(mat)
-            #idx = np.triu_indices_from(mat[0], 1)
-            #vec_networks = [m[idx] for m in mat]
-            #vec_networks = np.array(vec_networks)
             feature.append(np.stack(list(mat[0][0])[:128]))
             '''
             if len(feature) == 10:
@@ -60,12 +48,6 @@ class MyDataset(Dataset):
     def __len__(self):
         return len(self.all_anno)
 
-    def gretna_tranmat(self,mat):
-        m = []
-        for i in range(len(mat[0][0])):
-            m.append(mat[0][0][i])
-        m = np.array(m)
-        return m
 
 
     def __getitem__(self, idx):
@@ -89,5 +71,5 @@ class collater():
 
 def BuildDataloader(dataset, batch_size, shuffle, num_workers, collate_fn):
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle,
-                            collate_fn=collate_fn, num_workers=num_workers)
+                            collate_fn=collate_fn, num_workers=num_workers,prefetch_factor=4,drop_last=True)
     return dataloader
