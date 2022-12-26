@@ -37,7 +37,7 @@ class Pretrain():
         # 加载模型
         if args.resume_file:
             ori_model_state_dict = torch.load(args.resume_file)
-            model.load_state_dict(ori_model_state_dict, strict=True)
+            model.load_state_dict(ori_model_state_dict, strict=False)
             logger.info(f"successfully load the previous checkpoint from {args.resume_file}")
         model = model.to(device)  # model中的tensor不会转到devcie，只有变量才会转到devcie
         train_loader = BuildDataloader(dataset=train_set, batch_size=args.train_bs, shuffle=True, num_workers=args.num_workers)

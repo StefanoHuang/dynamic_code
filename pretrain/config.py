@@ -17,8 +17,8 @@ class Flags:
         self.parser.add_argument("--num_classes", type=int, default=2, help="Number for classification")
         self.parser.add_argument("--d_model", type=int, default=200, help="Dimension of node feature")
         self.parser.add_argument("--nhead", type=int, default=5, help="Number for self-attention heads")
-        self.parser.add_argument("--graph_layer", type=int, default=3, help="Number for graph transformer layers")
-        self.parser.add_argument("--seq_layer", type=int, default=3, help="Number for sequence transformer layers")
+        self.parser.add_argument("--graph_layer", type=int, default=6, help="Number for graph transformer layers")
+        self.parser.add_argument("--seq_layer", type=int, default=6, help="Number for sequence transformer layers")
     def adjust_base_args(self):
         self.parser.add_argument("--task", type=str, default="") # gen、cls
         self.parser.add_argument("--seed", type=int, default=10)
@@ -39,7 +39,7 @@ class Flags:
         # training hyper parameters
         self.parser.add_argument("--lr", type=float, default=1)
         self.parser.add_argument("--lr_scale", type=float, default=0.01)
-        self.parser.add_argument("--dropout_prob", type=float, default=0.1)
+        self.parser.add_argument("--dropout_prob", type=float, default=0.5)
         self.parser.add_argument("--weight_decay", type=float, default=2e-4)
         self.parser.add_argument("--accum_iter", type=int, default=2)
         self.parser.add_argument("--epochs", type=int, default=1000)
@@ -49,7 +49,7 @@ class Flags:
         self.parser.add_argument("--share_tokenizer", type=bool, default=True)
         self.parser.add_argument("--share_word_embedding", type=bool, default=True)
         self.parser.add_argument("--using_RL", type=bool, default=False)    
-        self.parser.add_argument("--mlm_probability", type=float, default=0.5)    
+        self.parser.add_argument("--mlm_probability", type=float, default=0.3)    
 
 flags = Flags()
 args_pretrain = flags.get_parser()

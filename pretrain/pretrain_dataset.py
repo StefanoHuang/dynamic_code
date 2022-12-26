@@ -102,6 +102,15 @@ class SequenceDataset(Dataset):
         inputs = [np.concatenate((inputs[i,:length//2,:],inputs[shuffle_list[i],length//2:,:]),axis=0) if mask[0,i] < prob else inputs[i,:,:] for i in range(mask.shape[1]) ]
         labels = [1  if mask[0,i]<prob else 0 for i in range(mask.shape[1])]
         return inputs,labels
+    
+    def generate_rp(self,inputs):#predict roi region
+        #length = inputs.shape[1]
+        #prob = self.args.mlm_probability
+        #shuffle_list = np.arange(inputs.shape[0])
+        #np.random.shuffle(shuffle_list)
+        #inputs = [np.concatenate((inputs[i,:length//2,:],inputs[shuffle_list[i],length//2:,:]),axis=0) if mask[0,i] < prob else inputs[i,:,:] for i in range(mask.shape[1]) ]
+        labels = [i for i in range(inputs.shape[1])]
+        return inputs,labels
     def get_conn(self,datapath):
         feature = []
         labels_list = []

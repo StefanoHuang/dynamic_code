@@ -23,8 +23,10 @@ class classifiedModel(nn.Module):
         self.args = args
         self.lin = nn.Linear(args.d_model,2)
         self.dropout = nn.Dropout(self.args.dropout_prob)
+        self.norm = nn.BatchNorm1d(args.d_model)
     def forward(self, x):
         x = self.dropout(x)
+        x = self.norm(x)
         x = self.lin(x)
         return F.softmax(x)    
 
