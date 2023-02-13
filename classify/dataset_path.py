@@ -8,7 +8,7 @@ def dataset_path(dataset_name):
     elif dataset_name == "hcp":
         d_path = "/home/ly/hym_code/dynamic_dataset/hcp"
     elif dataset_name == "mdd":
-        d_path = "/home/ly/hym_code/dynamic_dataset/mdd"
+        d_path = "/data/mdd"
     elif dataset_name == "other":
         pass
     else:

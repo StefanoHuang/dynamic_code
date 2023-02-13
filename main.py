@@ -24,8 +24,8 @@ def main():
     args = args_pretrain
     logger.info(f"args {args}")
     seed_everything(args.seed)
-    from classify.classify import Classification
-    from pretrain.pretrain_classify import Pretrain
+    #from classify.classify import Classification
+    from pretrain.pretrain_seqclassify import Pretrain
     #task = Classification()
     task = Pretrain()
     task.run(args)

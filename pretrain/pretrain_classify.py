@@ -22,7 +22,7 @@ class Pretrain():
         logger.info(f"Pretrain is processing")
         self.loss = nn.CrossEntropyLoss(reduction="mean")
 
-    def shuffle_single(self,single, prob):
+    def shuffle_single_perlori(self,single, prob):
         single = single.unsqueeze(0)
         shuffle_indices = torch.bernoulli(torch.full((1,single.shape[1]), prob)).bool()
         origin_index = torch.tensor([i for i in range(shuffle_indices.size(1)) if shuffle_indices[0,i]])
@@ -31,11 +31,19 @@ class Pretrain():
         order = torch.arange(0, single.size(1)).unsqueeze(0)
         order[shuffle_indices] = order[shuffle_indices][shuffle_index].unsqueeze(0)
         return single.squeeze(0), order
+    def shuffle_single(self,single):
+        label = torch.tensor([0 if i%2==0 else 1 for i in range(single.size(0))])
+        #shuffle_indices = label.bool()
+        shuffle_index=torch.randperm(single.size(0))
+        order = torch.arange(0, single.size(0)).unsqueeze(0)
+        label[order] = label[shuffle_index].unsqueeze(0)
+        single[order] = single[shuffle_index]
+        return single.squeeze(0), label.long()
     def shuffle_tokens(self, inputs,args):
         feat_list = []
         order_list = []
         for i in range(inputs.size(0)):
-            shuffled, label = self.shuffle_single(inputs[i],args.mlm_probability)
+            shuffled, label = self.shuffle_single(inputs[i])
             feat_list.append(shuffled)
             order_list.append(label)
         inputs = torch.stack(feat_list)

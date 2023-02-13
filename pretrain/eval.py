@@ -1,10 +1,11 @@
+import random
 from sklearn.metrics import accuracy_score, balanced_accuracy_score, confusion_matrix, f1_score, roc_auc_score
 import torch
 
 from pretrain.pretrain_dataset import BuildDataloader, GraphDataset, SequenceDataset
 from utils.utils import DecodingBCEWithMaskLoss, GenerateOOV, AverageMeter
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-def shuffle_single(single, prob):
+def shuffle_single_perlori(single, prob):
     single = single.unsqueeze(0)
     shuffle_indices = torch.bernoulli(torch.full((1,single.shape[1]), prob)).bool()
     origin_index = torch.tensor([i for i in range(shuffle_indices.size(1)) if shuffle_indices[0,i]])
@@ -13,15 +14,32 @@ def shuffle_single(single, prob):
     order = torch.arange(0, single.size(1)).unsqueeze(0)
     order[shuffle_indices] = order[shuffle_indices][shuffle_index]
     return single.squeeze(0), order
+def shuffle_single_lr(single):
+    label = torch.tensor([0 if i%2==0 else 1 for i in range(single.size(0))])
+    #shuffle_indices = label.bool()
+    shuffle_index=torch.randperm(single.size(0))
+    order = torch.arange(0, single.size(0)).unsqueeze(0)
+    label[order] = label[shuffle_index].unsqueeze(0)
+    single[order] = single[shuffle_index]
+    return single.squeeze(0), label.long()
+def shuffle_single(single,single_next,prob):
+    choose = random.random()
+    label = torch.tensor([1 if choose < prob else 0])
+    N = single.size(0)
+    if choose < prob:
+        single[N//2:,] = single_next[N//2:,]
+    return single, label.long()
 def shuffle_tokens(inputs,args):
     feat_list = []
     order_list = []
-    for i in range(inputs.size(0)):
-        shuffled, label = shuffle_single(inputs[i],args.mlm_probability)
+    for i in range(inputs.size(0)-1):
+        shuffled, label = shuffle_single(inputs[i],inputs[i+1],args.mlm_probability)
         feat_list.append(shuffled)
         order_list.append(label)
+    feat_list.append(inputs[-1])
+    order_list.append(torch.tensor([0]))
     inputs = torch.stack(feat_list)
-    labels = torch.stack(order_list).squeeze(1)
+    labels = torch.stack(order_list).squeeze(1).to(inputs.device)
     return inputs, labels
 def mask_tokens(inputs,args):
     labels = inputs.clone()
@@ -47,13 +65,17 @@ def eval_model(model, args, dataloader):
                 graph = graph.to(device)
                 graph,labels = shuffle_tokens(graph,args)
                 graph_pred = model(graph.transpose(0,1))
-                graph_pred = graph_pred.transpose(0,1)   
-                y_pred = graph_pred.argmax(dim=-1)
+                #graph_pred = graph_pred.transpose(0,1)   
+                #y_pred = graph_pred.argmax(dim=-1)
+                scores_pred = torch.nn.Softmax(dim=1)(graph_pred)
+                y_pred = scores_pred.argmax(dim=-1)
                 pred_list.append(y_pred)
-                y_list.append(labels)
+                y_list.append(labels)                
     y_list = torch.cat(y_list).squeeze(-1).cpu().numpy()
     pred_list = torch.cat(pred_list).squeeze(-1).cpu().numpy()
-    return (y_list == pred_list).sum().item() / (y_list.shape[0]*y_list.shape[1])
+    acc = accuracy_score(y_list, pred_list)
+    #return (y_list == pred_list).sum().item() / (y_list.shape[0]*y_list.shape[1])
+    return acc
 
 def eval_model_loss(model, args, dataloader, loss_fn):
     with torch.no_grad():

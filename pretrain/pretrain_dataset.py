@@ -13,6 +13,7 @@ from pretrain.dataset_path import dataset_path
 logger = Log(__name__).getlog()
 import scipy.io as sio
 import pickle
+import random
 class PretrainDataset(Dataset):
     def __init__(self, args):
         self.args = args
@@ -83,13 +84,15 @@ class GraphDataset(Dataset):
 class SequenceDataset(Dataset):
     def __init__(self, args, filepath):
         self.args = args
-        self.all_feat,self.Y = self.get_conn(filepath)
+        self.all_feat,self.Y = self.get_conn_ori(filepath)
 
     def generate_sop(self,inputs):
         mask = np.random.random((1,inputs.shape[0]))
-        length = inputs.shape[1]
         prob = self.args.mlm_probability
-        inputs = [np.concatenate((inputs[i,length//2:,:],inputs[i,:length//2,:]),axis=0) if mask[0,i] < prob else inputs[i,:,:] for i in range(mask.shape[1]) ]
+        shuffle_list = np.arange(inputs.shape[2])
+        temp_inputs = inputs.transpose(0,2,1)
+        np.random.shuffle(shuffle_list)
+        inputs = [temp_inputs[i,:,:][shuffle_list].transpose(1,0) if mask[0,i] < prob else temp_inputs[i,:,:].transpose(1,0) for i in range(mask.shape[1]) ]
         labels = [1  if mask[0,i]<prob else 0 for i in range(mask.shape[1])]
         return inputs,labels
     
@@ -104,24 +107,74 @@ class SequenceDataset(Dataset):
         return inputs,labels
     
     def generate_rp(self,inputs):#predict roi region
-        #length = inputs.shape[1]
-        #prob = self.args.mlm_probability
-        #shuffle_list = np.arange(inputs.shape[0])
-        #np.random.shuffle(shuffle_list)
-        #inputs = [np.concatenate((inputs[i,:length//2,:],inputs[shuffle_list[i],length//2:,:]),axis=0) if mask[0,i] < prob else inputs[i,:,:] for i in range(mask.shape[1]) ]
-        labels = [i for i in range(inputs.shape[1])]
+        #labels = [i for i in range(inputs.shape[0])]
+        newinputs = []
+        labels = []
+        steps = 8
+        for i in range(inputs.shape[0]):
+            for j in range((inputs.shape[1])//steps-1):
+                newinputs.append(inputs[i,j*steps:(j+1)*steps,:])
+                labels.append(i)
+        return newinputs,labels
+    
+    def generate_rm(self,inputs):#random masked
+        prob = 0.5
+        mask = np.random.random((1,inputs.shape[0]))
+        masked_indices = np.random.random((1,inputs.shape[1]))
+        newinput = []
+        for i in range(mask.shape[1]):
+            if mask[0,i] < prob:
+                mask_data = np.random.uniform(0,10,size=(inputs.shape[1:]))
+                temp = [mask_data[k] if masked_indices[0,k] < self.args.mlm_probability else inputs[i,k,:] for k in range(inputs.shape[1])]
+                newinput.append(np.array(temp))
+            else:
+                newinput.append(inputs[i,:,:])   
+        #inputs = [ if mask[0,i] < prob else inputs[i,:,:] for i in range(mask.shape[1]) ]
+        labels = [1  if mask[0,i]<prob else 0 for i in range(mask.shape[1])]        
+        return newinput,labels
+    def generate_nsp_new(self,inputs,replace_input):
+        mask = np.random.random((1,inputs.shape[0]))
+        length = inputs.shape[1]
+        prob = self.args.mlm_probability
+        inputs = [np.concatenate((inputs[i,:length//2,:],replace_input[i,length//2:,:]),axis=0) if mask[0,i] < prob else inputs[i,:,:] for i in range(mask.shape[1]) ]
+        labels = [1  if mask[0,i]<prob else 0 for i in range(mask.shape[1])]
         return inputs,labels
     def get_conn(self,datapath):
         feature = []
         labels_list = []
-        maxlen = 128
+        maxlen = 200
+        shuffle_list = np.arange(len(datapath))
+        np.random.shuffle(shuffle_list)
         for i in range(len(datapath)):
             subject = datapath[i]
             #print(subject)
             mat = sio.loadmat(subject)['DZStruct']
             temp = np.stack(list(mat[0][0])[:maxlen]).transpose(1,0,2)
-            #temp,labels = self.generate_sop(temp)
-            temp,labels = self.generate_nsp(temp)
+            replace_subject = datapath[random.choice(shuffle_list)]
+            mat_rep = sio.loadmat(replace_subject)['DZStruct']
+            temp_rep = np.stack(list(mat_rep[0][0])[:maxlen]).transpose(1,0,2)
+            temp,labels = self.generate_nsp_new(temp,temp_rep)
+            feature += temp
+            labels_list += labels
+        feature = [np.pad(feature[i],((0,maxlen-feature[i].shape[0]),(0,0)),'constant',constant_values=(-1e9,-1e9)) if feature[i].shape[0]< maxlen else feature[i] for i in range(len(feature))]
+        data_x = np.stack(feature)
+        data_y = np.array(labels_list)
+        return data_x, data_y
+
+    def get_conn_ori(self,datapath):
+        feature = []
+        labels_list = []
+        maxlen = 200
+        for i in range(len(datapath)):
+            subject = datapath[i]
+            #print(subject)
+            mat = sio.loadmat(subject)['DZStruct']
+            temp = np.stack(list(mat[0][0])[:maxlen]).transpose(1,0,2)
+            temp,labels = self.generate_sop(temp)
+            #shuffle_list = np.arange(len(datapath))
+            #np.random.shuffle(shuffle_list)
+            #temp,labels = self.generate_rp(temp)
+            #temp,labels = self.generate_rm(temp)
             feature += temp
             labels_list += labels
         feature = [np.pad(feature[i],((0,maxlen-feature[i].shape[0]),(0,0)),'constant',constant_values=(-1e9,-1e9)) if feature[i].shape[0]< maxlen else feature[i] for i in range(len(feature))]
@@ -137,5 +190,5 @@ class SequenceDataset(Dataset):
 
 
 def BuildDataloader(dataset, batch_size, shuffle, num_workers):
-    dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, num_workers=num_workers, pin_memory=True, prefetch_factor=10)
+    dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, num_workers=num_workers, pin_memory=True, prefetch_factor=4,drop_last=True)
     return dataloader

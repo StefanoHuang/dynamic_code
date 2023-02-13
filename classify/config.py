@@ -11,7 +11,7 @@ class Flags:
         return self.parser.parse_args()
 
     def use_data_args(self):
-        self.parser.add_argument("--dataset_name", type=str, default="abide", help="the name of dataset")
+        self.parser.add_argument("--dataset_name", type=str, default="mdd", help="the name of dataset")
         self.parser.add_argument("--output", type=str, default="./model/exp1", help="save the checkpoints and logs")
         self.parser.add_argument("--resume_file", type=str, default="", help="resume the checkpoint")
         self.parser.add_argument("--num_classes", type=int, default=2, help="Number for classification")
